@@ -44,15 +44,12 @@ export default {
 </script>
 
 <style scoped lang="scss">
-@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Raleway:wght@100;200;300;400;500;600;700&display=swap");
-
 .bar {
   width: 100%;
-  background: rgba(255, 255, 255, 0.06);
+  background: $background-app-bar;
 
   &__container {
-    padding: 12px 8px;
+    padding: $spacing-3 $spacing-2;
     margin: 0 auto;
     max-width: 1080px;
     display: flex;
@@ -61,7 +58,7 @@ export default {
   }
 
   &__button {
-    margin-left: 8px;
+    margin-left: $spacing-2;
   }
 }
 </style>

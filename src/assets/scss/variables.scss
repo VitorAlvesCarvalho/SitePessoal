@@ -1,0 +1,25 @@
+@import url("https://fonts.googleapis.com/css2?family=Raleway:wght@100;200;300;400;500;600;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700&display=swap");
+
+// spacings
+$spacing-1: 4px;
+$spacing-2: 8px;
+$spacing-3: 12px;
+$spacing-4: 16px;
+$spacing-5: 20px;
+$spacing-6: 24px;
+$spacing-7: 28px;
+$spacing-8: 32px;
+$spacing-9: 36px;
+$spacing-10: 40px;
+
+// colors
+$color-white: #fff;
+$color-black: #111;
+$background-app-bar: rgba(255, 255, 255, 0.06);
+$text-button: rgba(255, 255, 255, 0.8);
+
+// breakpoints
+$mobile: 0;
+$tablet: 450px;
+$desktop: 700px;

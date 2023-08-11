@@ -1,6 +1,6 @@
 <template>
   <div class="logo">
-    <img src="../assets/logo.png" />
+    <img src="../assets/imgs/logo.png" />
 
     <div>
       <span class="logo__name">Vitor Alves</span>
@@ -15,8 +15,6 @@ export default {
 </script>
 
 <style scoped lang="scss">
-@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700&display=swap");
-
 .logo {
   display: flex;
   align-items: center;
@@ -25,7 +23,7 @@ export default {
     color: white;
     font-family: "Poppins";
     font-size: 14px;
-    margin-left: 8px;
+    margin-left: $spacing-2;
   }
 }
 </style>
