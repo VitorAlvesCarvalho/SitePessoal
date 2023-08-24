@@ -1,5 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Raleway:wght@100;200;300;400;500;600;700&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&display=swap");
 
 // spacings
 $spacing-1: 4px;
@@ -12,12 +13,19 @@ $spacing-7: 28px;
 $spacing-8: 32px;
 $spacing-9: 36px;
 $spacing-10: 40px;
+$spacing-11: 44px;
+$spacing-12: 48px;
 
 // colors
-$color-white: #fff;
-$color-black: #111;
+$primary: #8740ed;
+$secondary: #c082ff;
+$tertiary: #7967ff;
+$white: #fff;
+$black: #111;
 $background-app-bar: rgba(255, 255, 255, 0.06);
 $text-button: rgba(255, 255, 255, 0.8);
+$gray-primary: #27272a;
+$gray-secondary: #18181b;
 
 // breakpoints
 $mobile: 0;

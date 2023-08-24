@@ -18,7 +18,7 @@
 
 <script>
 import Logo from "./Logo.vue";
-import ButtonAppBar from "./ButtonAppBar.vue";
+import ButtonAppBar from "./Buttons/ButtonAppBar.vue";
 
 export default {
   name: "AppBar",

@@ -4,7 +4,7 @@
 
 <script>
 export default {
-  name: "AppBar",
+  name: "ButtonPrimary",
 
   props: {
     text: {
@@ -17,20 +17,20 @@ export default {
 
 <style scoped lang="scss">
 .button {
-  font-family: "Raleway";
-  padding: $spacing-2 $spacing-4;
+  font-family: "Poppins";
+  font-size: 18px;
+  cursor: pointer;
+  font-weight: 600;
+  padding: $spacing-2 $spacing-8;
   background-color: transparent;
   text-decoration: none;
-  border: none;
-  border-radius: 4px;
-  color: $text-button;
-  font-size: 16px;
-  font-weight: 500;
-  cursor: pointer;
+  border-radius: 8px;
+  color: $white;
+  border: 1px solid $white;
 }
 
 .button:hover {
-  background-color: $color-white;
-  color: $color-black;
+  color: $primary;
+  border: 1px solid $primary;
 }
 </style>
