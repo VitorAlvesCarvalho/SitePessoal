@@ -19,7 +19,7 @@
     </div>
 
     <div class="introduction__image">
-      <img width="100%" src="../../assets/imgs/introduction.png" />
+      <img src="../../assets/imgs/introduction.png" width="100%" />
     </div>
   </div>
 </template>

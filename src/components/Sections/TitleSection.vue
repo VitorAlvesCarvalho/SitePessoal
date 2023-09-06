@@ -38,7 +38,7 @@ export default {
   font-weight: 700;
   color: $white;
   text-transform: uppercase;
-  margin: calc($spacing-20 + $spacing-20) 0 $spacing-20 0;
+  margin: calc($spacing-20 + $spacing-20) 0 calc($spacing-20 + $spacing-3) 0;
 
   &__mark {
     background-color: $primary;

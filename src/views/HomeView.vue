@@ -27,6 +27,8 @@ export default {
 
 <style scoped lang="scss">
 .home {
+  padding-bottom: $spacing-18;
+
   &__content {
     max-width: 1080px;
     width: 100%;
