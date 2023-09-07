@@ -1,9 +1,9 @@
 <template>
   <div class="logo">
-    <img src="../assets/imgs/logo.png" />
+    <img src="@/assets/imgs/logo.png" />
 
     <div>
-      <span class="logo__name">Vitor Alves</span>
+      <span class="logo__name poppins-font">Vitor Alves</span>
     </div>
   </div>
 </template>
@@ -21,7 +21,6 @@ export default {
 
   &__name {
     color: white;
-    font-family: "Poppins";
     font-size: 14px;
     margin-left: $spacing-2;
   }

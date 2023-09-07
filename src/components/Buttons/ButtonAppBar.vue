@@ -1,5 +1,5 @@
 <template>
-  <button class="button">{{ text }}</button>
+  <button class="button raleway-font">{{ text }}</button>
 </template>
 
 <script>
@@ -17,7 +17,6 @@ export default {
 
 <style scoped lang="scss">
 .button {
-  font-family: "Raleway";
   padding: $spacing-2 $spacing-4;
   background-color: transparent;
   text-decoration: none;

@@ -1,7 +1,7 @@
 <template>
-  <div class="introduction">
+  <div class="introduction poppins-font">
     <div class="introduction__content">
-      <div class="introduction__tag">
+      <div class="introduction__tag space-font">
         <span class="introduction__tag-text">Front-end Web</span>
       </div>
 
@@ -25,7 +25,7 @@
 </template>
 
 <script>
-import ButtonPrimary from "../Buttons/ButtonPrimary.vue";
+import ButtonPrimary from "@/components/Buttons/ButtonPrimary.vue";
 
 export default {
   name: "Introduction",
@@ -43,7 +43,6 @@ export default {
   justify-content: space-between;
   margin-top: $spacing-12;
   color: $white;
-  font-family: "Poppins";
 
   &__content {
     flex-grow: 1;
@@ -63,7 +62,6 @@ export default {
     border: 1px solid $gray-primary;
     background: $gray-secondary;
     font-size: 16px;
-    font-family: "Space Grotesk";
     text-transform: uppercase;
     font-weight: 500;
     width: fit-content;

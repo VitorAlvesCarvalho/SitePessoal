@@ -1,5 +1,5 @@
 <template>
-  <div class="title">
+  <div class="title poppins-font">
     <div class="title__divider"></div>
 
     <div>
@@ -34,11 +34,11 @@ export default {
   display: flex;
   justify-content: center;
   align-items: center;
-  font-family: "Poppins";
   font-size: 36px;
   font-weight: 700;
   color: $white;
   text-transform: uppercase;
+  margin: calc($spacing-20 + $spacing-20) 0 $spacing-20 0;
 
   &__mark {
     background-color: $primary;

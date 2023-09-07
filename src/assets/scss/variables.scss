@@ -2,6 +2,19 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&display=swap");
 
+// fonts
+.raleway-font {
+  font-family: "Raleway";
+}
+
+.poppins-font {
+  font-family: "Poppins";
+}
+
+.space-font {
+  font-family: "Space Grotesk";
+}
+
 // spacings
 $spacing-1: 4px;
 $spacing-2: 8px;
@@ -15,6 +28,14 @@ $spacing-9: 36px;
 $spacing-10: 40px;
 $spacing-11: 44px;
 $spacing-12: 48px;
+$spacing-13: 52px;
+$spacing-14: 56px;
+$spacing-15: 60px;
+$spacing-16: 64px;
+$spacing-17: 68px;
+$spacing-18: 72px;
+$spacing-19: 76px;
+$spacing-20: 80px;
 
 // colors
 $primary: #8740ed;
