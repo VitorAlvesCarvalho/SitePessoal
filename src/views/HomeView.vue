@@ -4,13 +4,15 @@
 
     <div class="home__content">
       <Introduction />
+      <About />
     </div>
   </div>
 </template>
 
 <script>
-import AppBar from "../components/AppBar.vue";
-import Introduction from "../components/Sections/Introduction.vue";
+import About from "@/components/Sections/About.vue";
+import AppBar from "@/components/AppBar.vue";
+import Introduction from "@/components/Sections/Introduction.vue";
 
 export default {
   name: "HomeView",
@@ -18,6 +20,7 @@ export default {
   components: {
     AppBar,
     Introduction,
+    About,
   },
 };
 </script>

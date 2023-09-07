@@ -12,7 +12,7 @@ export default {
 html,
 body {
   min-height: 100vh;
-  background-image: url("./assets/imgs/background-image.png");
+  background-image: url("@/assets/imgs/background-image.png");
   background-repeat: no-repeat;
   background-size: 100% 100%;
 }
