@@ -5,6 +5,7 @@
     <div class="home__content">
       <Introduction />
       <About />
+      <Experiences />
     </div>
   </div>
 </template>
@@ -13,6 +14,7 @@
 import About from "@/components/Sections/About.vue";
 import AppBar from "@/components/AppBar.vue";
 import Introduction from "@/components/Sections/Introduction.vue";
+import Experiences from "@/components/Sections/Experiences.vue";
 
 export default {
   name: "HomeView",
@@ -21,6 +23,7 @@ export default {
     AppBar,
     Introduction,
     About,
+    Experiences,
   },
 };
 </script>
