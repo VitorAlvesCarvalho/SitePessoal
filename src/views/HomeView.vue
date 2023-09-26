@@ -6,6 +6,7 @@
       <Introduction />
       <About />
       <Experiences />
+      <Projects />
     </div>
   </div>
 </template>
@@ -15,6 +16,7 @@ import About from "@/components/Sections/About.vue";
 import AppBar from "@/components/AppBar.vue";
 import Introduction from "@/components/Sections/Introduction.vue";
 import Experiences from "@/components/Sections/Experiences.vue";
+import Projects from "@/components/Sections/Projects.vue";
 
 export default {
   name: "HomeView",
@@ -24,6 +26,7 @@ export default {
     Introduction,
     About,
     Experiences,
+    Projects,
   },
 };
 </script>

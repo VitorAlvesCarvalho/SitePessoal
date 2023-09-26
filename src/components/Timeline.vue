@@ -18,7 +18,7 @@
       </div>
 
       <div class="timeline__icon">
-        <img src="@/assets/icons/experiences.png" />
+        <img width="100%" src="@/assets/icons/experiences.svg" />
       </div>
     </div>
   </div>
@@ -43,7 +43,7 @@ export default {
 
   &__list {
     width: 100%;
-    margin: $spacing-30 0;
+    margin: $spacing-30 0 $spacing-20;
   }
 
   &__divider {
@@ -57,7 +57,7 @@ export default {
     color: $primary;
     border-radius: 12px;
     padding: $spacing-3 $spacing-4;
-    font-size: 42px;
+    font-size: 32px;
     font-weight: 700;
   }
 
@@ -74,7 +74,8 @@ export default {
     display: flex;
     justify-content: center;
     align-content: center;
-    padding: $spacing-1;
+    padding: $spacing-4;
+    aspect-ratio: 1/1;
   }
 }
 </style>

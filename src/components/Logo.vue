@@ -1,6 +1,6 @@
 <template>
   <div class="logo">
-    <img src="@/assets/imgs/logo.png" />
+    <img src="@/assets/imgs/logo.svg" />
 
     <div>
       <span class="logo__name poppins-font">Vitor Alves</span>

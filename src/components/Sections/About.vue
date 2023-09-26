@@ -4,7 +4,7 @@
 
     <div class="about__container">
       <div class="about__presentation">
-        <img src="@/assets/imgs/profile.png" width="100%" />
+        <img src="@/assets/imgs/profile.svg" width="100%" />
 
         <div class="profile poppins-font">
           <p class="profile__name">VITOR ALVES</p>
