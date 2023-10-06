@@ -23,4 +23,18 @@ body {
   margin: 0;
   box-sizing: border-box;
 }
+
+body::-webkit-scrollbar {
+  width: 12px;
+}
+
+body::-webkit-scrollbar-track {
+  background: $black;
+}
+
+body::-webkit-scrollbar-thumb {
+  background-color: $primary;
+  border-radius: 40px;
+  border: 3px solid $black;
+}
 </style>
