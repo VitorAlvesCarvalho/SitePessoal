@@ -8,7 +8,7 @@
         <ButtonAppBar
           v-for="(button, index) in buttons"
           :key="index"
-          :text="button"
+          :data="button"
           class="bar__button"
         />
       </div>
@@ -31,12 +31,12 @@ export default {
   data() {
     return {
       buttons: [
-        "Início",
-        "Sobre mim",
-        "Experiências",
-        "Projetos",
-        "Conhecimentos",
-        "Contato",
+        { text: "Início", link: "#inicio" },
+        { text: "Sobre mim", link: "#sobre-mim" },
+        { text: "Experiências", link: "#experiencias" },
+        { text: "Projetos", link: "#projetos" },
+        { text: "Conhecimentos", link: "#conhecimentos" },
+        { text: "Contato", link: "#contato" },
       ],
     };
   },

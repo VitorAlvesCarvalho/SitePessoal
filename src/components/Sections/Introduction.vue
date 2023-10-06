@@ -41,7 +41,7 @@ export default {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  margin-top: $spacing-20;
+  padding-top: $spacing-20;
   color: $white;
 
   &__content {

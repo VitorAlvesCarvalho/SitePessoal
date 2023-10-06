@@ -3,12 +3,12 @@
     <AppBar />
 
     <div class="home__content">
-      <Introduction />
-      <About />
-      <Experiences />
-      <Projects />
-      <Knowledge />
-      <Contacts />
+      <Introduction id="inicio" />
+      <About id="sobre-mim" />
+      <Experiences id="experiencias" />
+      <Projects id="projetos" />
+      <Knowledge id="conhecimentos" />
+      <Contacts id="contato" />
     </div>
   </div>
 </template>
@@ -47,5 +47,9 @@ export default {
     margin: 0 auto;
     padding: 0 $spacing-2;
   }
+}
+
+.teste {
+  border: 1px solid red;
 }
 </style>

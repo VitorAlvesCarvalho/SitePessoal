@@ -1,5 +1,7 @@
 <template>
-  <button class="button raleway-font">{{ text }}</button>
+  <a :href="data.link">
+    <button class="button raleway-font">{{ data.text }}</button>
+  </a>
 </template>
 
 <script>
@@ -7,8 +9,8 @@ export default {
   name: "ButtonAppBar",
 
   props: {
-    text: {
-      type: String,
+    data: {
+      type: Object,
       required: true,
     },
   },
