@@ -15,6 +15,7 @@ body {
   background-image: url("@/assets/imgs/background-image.png");
   background-repeat: no-repeat;
   background-size: 100% 100%;
+  padding-bottom: $spacing-8;
 }
 
 * {

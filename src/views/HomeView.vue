@@ -7,7 +7,8 @@
       <About />
       <Experiences />
       <Projects />
-      <Knowledge/>
+      <Knowledge />
+      <Contacts />
     </div>
   </div>
 </template>
@@ -18,7 +19,8 @@ import AppBar from "@/components/AppBar.vue";
 import Introduction from "@/components/Sections/Introduction.vue";
 import Experiences from "@/components/Sections/Experiences.vue";
 import Projects from "@/components/Sections/Projects.vue";
-import Knowledge from '@/components/Sections/Knowledge.vue';
+import Knowledge from "@/components/Sections/Knowledge.vue";
+import Contacts from "@/components/Sections/Contacts.vue";
 
 export default {
   name: "HomeView",
@@ -29,7 +31,8 @@ export default {
     About,
     Experiences,
     Projects,
-    Knowledge
+    Knowledge,
+    Contacts,
   },
 };
 </script>
