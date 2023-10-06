@@ -15,7 +15,9 @@
         desenvolvimento front-end web utilizando Vue como framework de trabalho.
       </p>
 
-      <ButtonPrimary text="Baixar CV" />
+      <a href="curriculo.pdf" download="Currículo Vitor" target="_blank">
+        <ButtonPrimary text="Baixar CV" />
+      </a>
     </div>
 
     <div class="introduction__image">
