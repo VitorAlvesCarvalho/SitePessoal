@@ -63,8 +63,4 @@ export default {
 .item:hover {
   transform: scale(1.1);
 }
-
-a {
-  text-decoration: none;
-}
 </style>

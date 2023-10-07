@@ -15,7 +15,7 @@
 
 <script>
 import About from "@/components/Sections/About.vue";
-import AppBar from "@/components/AppBar.vue";
+import AppBar from "@/components/AppBar/AppBar.vue";
 import Introduction from "@/components/Sections/Introduction.vue";
 import Experiences from "@/components/Sections/Experiences.vue";
 import Projects from "@/components/Sections/Projects.vue";
@@ -42,10 +42,10 @@ export default {
   padding-bottom: $spacing-18;
 
   &__content {
-    max-width: 1080px;
+    max-width: 1090px;
     width: 100%;
     margin: 0 auto;
-    padding: 0 $spacing-2;
+    padding: 0 $spacing-4;
   }
 }
 

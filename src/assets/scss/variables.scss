@@ -20,6 +20,10 @@
   font-family: "Lora";
 }
 
+a {
+  text-decoration: none;
+}
+
 // spacings
 $spacing-1: 4px;
 $spacing-2: 8px;
@@ -62,4 +66,5 @@ $gray-quaternary: #949494;
 // breakpoints
 $mobile: 0;
 $tablet: 450px;
-$desktop: 700px;
+$small-desktop: 700px;
+$desktop: 900px;
