@@ -2,8 +2,11 @@ import Vue from "vue";
 import App from "./App.vue";
 import "./registerServiceWorker";
 import router from "./router";
+import Utils from "@/utils/Utils.vue";
 
 Vue.config.productionTip = false;
+
+Vue.mixin(Utils);
 
 Vue.directive("click-outside", {
   bind: function (el, binding, vnode) {

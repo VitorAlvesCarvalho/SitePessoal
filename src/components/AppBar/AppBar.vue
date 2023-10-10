@@ -4,7 +4,7 @@
       <div>
         <Logo />
       </div>
-      <div>
+      <div v-if="!smallDesktopAndDown">
         <ButtonAppBar
           v-for="button in buttons"
           :key="button.id"
@@ -13,7 +13,7 @@
         />
       </div>
 
-      <div v-if="false">
+      <div v-else>
         <MenuAppBar />
       </div>
     </div>
