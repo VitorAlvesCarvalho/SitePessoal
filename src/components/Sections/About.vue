@@ -50,19 +50,59 @@ export default {
 
   &__container {
     display: flex;
-    justify-content: space-between;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  @media (min-width: $small-desktop) {
+    &__container {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+    }
   }
 
   &__presentation {
-    width: 35%;
+    width: 100%;
     display: flex;
     flex-direction: column;
-    margin-right: $spacing-12;
+  }
+
+  @media (min-width: $tablet) {
+    &__presentation {
+      width: 60%;
+    }
+  }
+
+  @media (min-width: $small-desktop) {
+    &__presentation {
+      width: 35%;
+      margin-right: $spacing-6;
+    }
+  }
+
+  @media (min-width: $desktop) {
+    &__presentation {
+      margin-right: $spacing-12;
+    }
   }
 
   &__phrases {
-    width: 65%;
-    margin-left: $spacing-8;
+    margin-top: $spacing-10;
+  }
+
+  @media (min-width: $small-desktop) {
+    &__phrases {
+      width: 65%;
+      margin-left: $spacing-4;
+      margin-top: 0;
+    }
+  }
+
+  @media (min-width: $desktop) {
+    &__phrases {
+      margin-left: $spacing-8;
+    }
   }
 
   &__text {

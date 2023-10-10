@@ -20,7 +20,7 @@
       </a>
     </div>
 
-    <div class="introduction__image">
+    <div v-if="!tabletAndDown" class="introduction__image">
       <img src="@/assets/imgs/introduction.svg" width="100%" />
     </div>
   </div>
