@@ -35,6 +35,7 @@ export default {
   display: flex;
   flex-direction: column;
   align-items: center;
+  margin-bottom: $spacing-4;
 
   &__icon {
     width: 80px;
@@ -49,7 +50,7 @@ export default {
   &__title {
     font-size: 24px;
     font-weight: 500;
-    margin: $spacing-3 0 $spacing-2;
+    margin: $spacing-2 0 $spacing-1;
     color: $white;
   }
 
