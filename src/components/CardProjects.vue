@@ -15,11 +15,11 @@
       <div class="grow card__links-container">
         <div :class="[{ card__links: project.github && project.url }]">
           <a v-if="project.github" :href="project.github" target="_blank">
-            <img src="@/assets/icons/github.svg" />
+            <img class="card__icon" src="@/assets/icons/github.svg" />
           </a>
 
           <a v-if="project.url" :href="project.url" target="_blank">
-            <img src="@/assets/icons/web.svg" />
+            <img class="card__icon" src="@/assets/icons/web.svg" />
           </a>
         </div>
       </div>
@@ -44,12 +44,27 @@ export default {
     };
   },
 
+  watch: {
+    size() {
+      if (this.smallDesktopAndDown) {
+        this.hoverCard = true;
+        return;
+      }
+
+      this.hoverCard = false;
+    },
+  },
+
   methods: {
     addHover() {
+      if (this.tabletAndDown) return;
+
       this.hoverCard = true;
     },
 
     removeHover() {
+      if (this.tabletAndDown) return;
+
       this.hoverCard = false;
     },
   },
@@ -58,9 +73,11 @@ export default {
 
 <style scoped lang="scss">
 .card {
+  margin: 0 auto;
   position: relative;
   color: $white;
   aspect-ratio: 1/1;
+  max-width: 400px;
   width: 100%;
   background-repeat: no-repeat;
   background-size: 100%;
@@ -69,9 +86,15 @@ export default {
   &__title {
     display: flex;
     align-items: center;
-    font-size: 38px;
+    font-size: 30px;
     font-weight: 600;
     line-height: 48px;
+  }
+
+  @media (min-width: $desktop) {
+    &__title {
+      font-size: 38px;
+    }
   }
 
   &__links-container {
@@ -81,9 +104,24 @@ export default {
 
   &__links {
     display: grid;
-    grid-gap: $spacing-5;
     grid-template-columns: repeat(2, 1fr);
     justify-content: center;
+  }
+
+  @media (min-width: $desktop) {
+    &__links {
+      grid-gap: $spacing-5;
+    }
+  }
+
+  &__icon {
+    width: 80%;
+  }
+
+  @media (min-width: $desktop) {
+    &__icon {
+      width: 100%;
+    }
   }
 
   &__links img {
@@ -103,8 +141,14 @@ export default {
     height: 100%;
     opacity: 0;
     border-radius: 12px;
-    padding: $spacing-10 $spacing-8 $spacing-6;
+    padding: $spacing-6 $spacing-4 $spacing-3;
     animation: hover 0.7s ease both;
+  }
+
+  @media (min-width: $desktop) {
+    &__hover {
+      padding: $spacing-6 $spacing-8 $spacing-6;
+    }
   }
 
   &__leave {
@@ -137,6 +181,13 @@ export default {
 
   .grow {
     flex-grow: 1;
+  }
+}
+
+@media (min-width: $small-desktop) {
+  .card {
+    width: 100%;
+    max-width: 100%;
   }
 }
 </style>

@@ -37,8 +37,28 @@ export default {
 .projects {
   &__list {
     display: grid;
-    grid-gap: $spacing-20;
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: repeat(1, 1fr);
+    grid-gap: $spacing-8;
+  }
+
+  @media (min-width: $small-desktop) {
+    &__list {
+      display: grid;
+      grid-gap: $spacing-6;
+      grid-template-columns: repeat(2, 1fr);
+    }
+  }
+
+  @media (min-width: $small-desktop) {
+    &__list {
+      grid-gap: $spacing-10;
+    }
+  }
+
+  @media (min-width: $desktop) {
+    &__list {
+      grid-gap: $spacing-20;
+    }
   }
 }
 </style>

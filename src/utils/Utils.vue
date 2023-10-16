@@ -26,7 +26,7 @@ export default {
     },
 
     tabletAndDown() {
-    return this.size < 700;
+      return this.size < 700;
     },
 
     smallDesktopAndDown() {
