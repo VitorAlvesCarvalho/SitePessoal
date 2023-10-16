@@ -44,6 +44,13 @@ export default {
     };
   },
 
+  created() {
+    if (this.smallDesktopAndDown) {
+      this.hoverCard = true;
+      return;
+    }
+  },
+
   watch: {
     size() {
       if (this.smallDesktopAndDown) {
