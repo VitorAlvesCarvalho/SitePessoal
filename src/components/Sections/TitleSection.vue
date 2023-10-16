@@ -1,13 +1,13 @@
 <template>
   <div class="title poppins-font">
-    <div class="title__divider"></div>
+    <div v-if="!tabletAndDown" class="title__divider"></div>
 
-    <div>
+    <div class="title__texts">
       <span>{{ text }}</span>
       <span class="title__mark">{{ textComplement }}</span>
     </div>
 
-    <div class="title__divider"></div>
+    <div v-if="!tabletAndDown" class="title__divider"></div>
   </div>
 </template>
 
@@ -34,17 +34,42 @@ export default {
   display: flex;
   justify-content: center;
   align-items: center;
-  font-size: 36px;
   font-weight: 700;
   color: $white;
   text-transform: uppercase;
-  margin: calc($spacing-40 + $spacing-16) 0 calc($spacing-20 + $spacing-3) 0;
+  margin: $spacing-40 0 $spacing-16 0;
+
+  &__texts {
+    display: flex;
+    font-size: 32px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  @media (min-width: $tablet) {
+    &__texts {
+      display: flex;
+      flex-direction: row;
+    }
+  }
+
+  @media (min-width: $small-desktop) {
+    &__texts {
+      font-size: 36px;
+    }
+  }
 
   &__mark {
     background-color: $primary;
     border-radius: 6px;
     padding: 0 $spacing-2;
-    margin-left: $spacing-4;
+  }
+
+  @media (min-width: $tablet) {
+    &__mark {
+      margin-left: $spacing-4;
+    }
   }
 
   &__divider {
@@ -53,6 +78,12 @@ export default {
     width: 40px;
     height: 2px;
     background-color: $yellow;
+  }
+}
+
+@media (min-width: $tablet) {
+  .title {
+    margin: calc($spacing-40 + $spacing-16) 0 calc($spacing-20 + $spacing-3) 0;
   }
 }
 </style>
