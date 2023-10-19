@@ -92,7 +92,7 @@ export default {
 
   @media (min-width: $small-desktop) {
     &__line {
-      width: 6px;
+      width: 8px;
       margin: 0 $spacing-8;
     }
   }
