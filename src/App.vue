@@ -5,6 +5,16 @@
 <script>
 export default {
   name: "App",
+
+  created() {
+    if (this.$route.path !== "/") {
+      this.$router.push({ name: "home" });
+    }
+  },
+
+  mounted() {
+    window.scrollTo({ top: 0, behavior: "smooth" });
+  },
 };
 </script>
 
@@ -16,6 +26,7 @@ body {
   background-repeat: no-repeat;
   background-size: 100% 100%;
   padding-bottom: $spacing-8;
+  scroll-behavior: smooth;
 }
 
 * {

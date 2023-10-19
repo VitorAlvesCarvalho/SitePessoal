@@ -6,7 +6,7 @@
       <template #content-left>
         <div
           class="poppins-font experiences__item"
-          v-for="(experience, index) in listExperiencesLeft"
+          v-for="(experience, index) in listExperiencesLeft()"
           :key="index"
           @mouseenter="addHover(experience.id)"
           @mouseleave="removeHover"
@@ -30,7 +30,7 @@
       <template #content-right>
         <div
           class="poppins-font experiences__item"
-          v-for="(experience, index) in listExperiencesRight"
+          v-for="(experience, index) in listExperiencesRight()"
           :key="index"
           @mouseenter="addHover(experience.id)"
           @mouseleave="removeHover"
@@ -74,23 +74,19 @@ export default {
     };
   },
 
-  computed: {
-    listExperiencesLeft() {
-      return experiences.slice(0, 3);
-    },
-
-    listExperiencesRight() {
-      return experiences.slice(3, 5).reverse();
-    },
-  },
+  computed: {},
 
   methods: {
     addHover(id) {
+      if (this.smallDesktopAndDown) return;
+
       this.hoverCardId = id;
       this.hoverCard = true;
     },
 
     removeHover() {
+      if (this.smallDesktopAndDown) return;
+
       this.hoverCardId = "";
       this.hoverCard = false;
     },
@@ -122,6 +118,15 @@ export default {
         "experiences__time",
       ];
     },
+
+    listExperiencesLeft() {
+      return experiences.slice(0, 3);
+    },
+
+    listExperiencesRight() {
+      if (!this.tabletAndDown) return experiences.slice(3, 5).reverse();
+      return experiences.reverse();
+    },
   },
 };
 </script>
@@ -131,18 +136,26 @@ export default {
   color: $white;
 
   &__item {
-    margin-bottom: $spacing-20;
+    margin-bottom: $spacing-14;
     box-sizing: border-box !important;
     transition: 400ms linear;
   }
 
-  &__item:hover {
-    box-sizing: border-box !important;
-    color: $primary !important;
-    background-color: $white;
-    border-radius: 16px;
-    padding: $spacing-4 $spacing-4 $spacing-4 $spacing-5;
-    transition: 400ms linear;
+  @media (min-width: $small-desktop) {
+    &__item {
+      margin-bottom: $spacing-20;
+    }
+  }
+
+  @media (min-width: $desktop) {
+    &__item:hover {
+      box-sizing: border-box !important;
+      color: $primary !important;
+      background-color: $white;
+      border-radius: 16px;
+      padding: $spacing-4 $spacing-4 $spacing-4 $spacing-5;
+      transition: 400ms linear;
+    }
   }
 
   &__company {

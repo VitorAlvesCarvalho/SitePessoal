@@ -6,7 +6,7 @@
       </div>
 
       <div class="timeline__divider">
-        <div class="timeline__list">
+        <div class="timeline__list" v-if="!tabletAndDown">
           <slot name="content-left" />
         </div>
 
@@ -18,7 +18,10 @@
       </div>
 
       <div class="timeline__icon">
-        <img width="100%" src="@/assets/icons/experiences.svg" />
+        <img
+          :width="tabletAndDown ? '70%' : '100%'"
+          src="@/assets/icons/experiences.svg"
+        />
       </div>
     </div>
   </div>
@@ -38,12 +41,24 @@ export default {
   &__container {
     display: flex;
     flex-direction: column;
-    align-items: center;
+    align-items: flex-start;
+  }
+
+  @media (min-width: $small-desktop) {
+    &__container {
+      align-items: center;
+    }
   }
 
   &__list {
     width: 100%;
-    margin: $spacing-30 0 $spacing-20;
+    margin: $spacing-14 0 0;
+  }
+
+  @media (min-width: $small-desktop) {
+    &__list {
+      margin: $spacing-30 0 $spacing-20;
+    }
   }
 
   &__divider {
@@ -56,16 +71,36 @@ export default {
     background-color: $white;
     color: $primary;
     border-radius: 12px;
-    padding: $spacing-3 $spacing-4;
-    font-size: 32px;
+    padding: $spacing-1 $spacing-4;
+    font-size: 26px;
     font-weight: 700;
+  }
+
+  @media (min-width: $small-desktop) {
+    &__title {
+      padding: $spacing-3 $spacing-4;
+      font-size: 32px;
+    }
   }
 
   &__line {
     background-color: $primary;
-    width: 6px;
+    width: 3px;
     height: 100%;
-    margin: 0 $spacing-20;
+    margin: 0 $spacing-5;
+  }
+
+  @media (min-width: $small-desktop) {
+    &__line {
+      width: 6px;
+      margin: 0 $spacing-8;
+    }
+  }
+
+  @media (min-width: $desktop) {
+    &__line {
+      margin: 0 $spacing-16;
+    }
   }
 
   &__icon {
@@ -74,8 +109,14 @@ export default {
     display: flex;
     justify-content: center;
     align-content: center;
-    padding: $spacing-4;
+    padding: $spacing-2;
     aspect-ratio: 1/1;
+  }
+
+  @media (min-width: $small-desktop) {
+    &__icon {
+      padding: $spacing-4;
+    }
   }
 }
 </style>

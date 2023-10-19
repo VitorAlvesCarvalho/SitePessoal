@@ -48,8 +48,4 @@ export default {
     padding: 0 $spacing-4;
   }
 }
-
-.teste {
-  border: 1px solid red;
-}
 </style>
