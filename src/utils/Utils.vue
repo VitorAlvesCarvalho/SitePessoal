@@ -4,7 +4,7 @@ export default {
 
   data() {
     return {
-      size: window.screen.width,
+      size: window.innerWidth,
     };
   },
 
