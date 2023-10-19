@@ -16,7 +16,7 @@ export default {
 
   methods: {
     onResize() {
-      this.size = window.screen.width;
+      this.size = window.innerWidth;
     },
   },
 
