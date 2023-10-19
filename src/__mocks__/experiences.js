@@ -26,7 +26,7 @@ export const experiences = [
   {
     id: "4",
     company: "Warren Brasil",
-    role: "Desenvolvedor Front-end | Vue",
+    role: "Desenvolvedor Front-end | Vue e mentor de jovens aprendizes",
     description:
       "<ul> <li>Atuava no time portfolio experience, que é responsável pela experiência do usuário na criação de carteiras na plataforma de investimentos(maior e principal projeto da empresa).</li> <li>Manutenção e desenvolvimento de novas funcionalidades.</li> <li>Funcionalidades que participei ativamente do desenvolvimento: construtor de carteiras, editor de carteiras, assinatura de termos e riscos, tracking para mapear ações do usuário e depósito por múltiplos produtos.</li> <li>Também atuava como liderança técnica front end na tribo de aceleração, servindo de apoio para os jovens aprendizes, tirando dúvidas e avaliando o progresso de cada um.</li> </ul>",
     time: "Jan de 2022 - Ago de 2022 · 8 meses",

@@ -11,8 +11,10 @@
       </p>
 
       <p class="introduction__description">
-        Desenvolvedor Front-end com conhecimento e 3 anos de experiência em
-        desenvolvimento front-end web utilizando Vue como framework de trabalho.
+        Tenho experiências em empresas de seguimentos diversificados, atuando no
+        desenvolvimento de novas funcionalidades e correções de bugs. Também
+        participo de tomadas de decisões técnicas e estrátegicas e no auxilio a
+        outros desenvolvedores da equipe.
       </p>
 
       <a href="curriculo.pdf" download="Currículo Vitor" target="_blank">

@@ -21,11 +21,22 @@
         <p class="about__author poppins-font">- Steve Jobs</p>
 
         <p class="about__description lora-font">
-          Desenvolvedor Front-end com conhecimento e 3 anos de experiência em
-          desenvolvimento front-end web utilizando Vue como framework de
-          trabalho. Criação de telas conforme design, integração com api rest e
-          graphql, refatoração de código para melhor desempenho, desenvolvimento
-          de novas funcionalidades.
+          Olá, meu nome é Vitor, tenho 24 anos e sou mineiro da cidade de
+          Uberlândia. Eu gosto de assistir filmes/séries, jogar futebol, andar
+          de bicicleta, viajar e sair para passear e aproveitar a companhia das
+          pessoas.
+        </p>
+
+        <p class="about__description lora-font">
+          Desde novo eu gosto de tecnologia e escolhi trabalhar nessa área para
+          ter a oportunidade de facilitar a vida das pessoas atráves das minhas
+          criações, e é isso que me motiva. Sou uma pessoa sonhadora e trabalho
+          para a realização. Sou dedicado e persistente no que me proponho a
+          fazer.
+        </p>
+
+        <p class="about__description lora-font">
+          Seja muito bem vindo(a)! Espero que goste do meu trabalho &#128521;.
         </p>
       </div>
     </div>
@@ -114,12 +125,14 @@ export default {
     font-size: 24px;
     font-weight: 400;
     color: $yellow;
+    margin-bottom: $spacing-8;
   }
 
   &__description {
     font-size: 20px;
     font-weight: 400;
-    margin-top: $spacing-9;
+    margin-top: $spacing-1;
+    text-indent: 20px;
   }
 }
 
