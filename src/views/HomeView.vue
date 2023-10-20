@@ -3,12 +3,53 @@
     <AppBar />
 
     <div class="home__content">
-      <Introduction id="inicio" />
-      <About id="sobre-mim" />
-      <Experiences id="experiencias" />
-      <Projects id="projetos" />
-      <Knowledge id="conhecimentos" />
-      <Contacts id="contato" />
+      <Introduction
+        id="inicio"
+        data-aos="fade-right"
+        data-aos-duration="1500"
+        data-aos-once="true"
+        data-aos-offset="200"
+      />
+
+      <About
+        id="sobre-mim"
+        data-aos="fade-right"
+        data-aos-duration="1500"
+        data-aos-once="true"
+        data-aos-offset="200"
+      />
+
+      <Experiences
+        id="experiencias"
+        data-aos="fade-right"
+        data-aos-duration="1500"
+        data-aos-once="true"
+        data-aos-offset="200"
+      />
+
+      <Projects
+        id="projetos"
+        data-aos="fade-right"
+        data-aos-duration="1500"
+        data-aos-once="true"
+        data-aos-offset="200"
+      />
+
+      <Knowledge
+        id="conhecimentos"
+        data-aos="fade-right"
+        data-aos-duration="1500"
+        data-aos-once="true"
+        data-aos-offset="200"
+      />
+
+      <Contacts
+        id="contato"
+        data-aos="fade-right"
+        data-aos-duration="1500"
+        data-aos-once="true"
+        data-aos-offset="200"
+      />
     </div>
   </div>
 </template>

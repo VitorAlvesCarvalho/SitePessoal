@@ -71,6 +71,7 @@ export default {
 .menu {
   margin-top: $spacing-1;
   position: relative;
+  z-index: 1;
 
   &__button {
     background: transparent;
