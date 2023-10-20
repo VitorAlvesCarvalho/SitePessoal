@@ -3,53 +3,17 @@
     <AppBar />
 
     <div class="home__content">
-      <Introduction
-        id="inicio"
-        data-aos="fade-right"
-        data-aos-duration="1500"
-        data-aos-once="true"
-        data-aos-offset="200"
-      />
+      <Introduction id="inicio" v-bind="classAnimate" />
 
-      <About
-        id="sobre-mim"
-        data-aos="fade-right"
-        data-aos-duration="1500"
-        data-aos-once="true"
-        data-aos-offset="200"
-      />
+      <About id="sobre-mim" v-bind="classAnimate" />
 
-      <Experiences
-        id="experiencias"
-        data-aos="fade-right"
-        data-aos-duration="1500"
-        data-aos-once="true"
-        data-aos-offset="200"
-      />
+      <Experiences id="experiencias" v-bind="classAnimate" />
 
-      <Projects
-        id="projetos"
-        data-aos="fade-right"
-        data-aos-duration="1500"
-        data-aos-once="true"
-        data-aos-offset="200"
-      />
+      <Projects id="projetos" v-bind="classAnimate" />
 
-      <Knowledge
-        id="conhecimentos"
-        data-aos="fade-right"
-        data-aos-duration="1500"
-        data-aos-once="true"
-        data-aos-offset="200"
-      />
+      <Knowledge id="conhecimentos" v-bind="classAnimate" />
 
-      <Contacts
-        id="contato"
-        data-aos="fade-right"
-        data-aos-duration="1500"
-        data-aos-once="true"
-        data-aos-offset="200"
-      />
+      <Contacts id="contato" v-bind="classAnimate" />
     </div>
   </div>
 </template>
@@ -74,6 +38,17 @@ export default {
     Projects,
     Knowledge,
     Contacts,
+  },
+
+  computed: {
+    classAnimate() {
+      return {
+        "data-aos": "fade-right",
+        "data-aos-duration": "1500",
+        "data-aos-once": "true",
+        "data-aos-offset": "200",
+      };
+    },
   },
 };
 </script>
