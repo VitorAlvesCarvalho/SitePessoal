@@ -35,10 +35,6 @@ export default {
 
 <style scoped lang="scss">
 .knowledge {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-
   &__list {
     display: grid;
     grid-gap: $spacing-8;

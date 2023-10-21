@@ -45,7 +45,7 @@ export default {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding-top: $spacing-20;
+  padding-top: $spacing-40;
   color: $white;
 
   &__content {

@@ -37,7 +37,8 @@ export default {
   font-weight: 700;
   color: $white;
   text-transform: uppercase;
-  margin: $spacing-40 0 $spacing-16 0;
+  margin: $spacing-20 0 $spacing-16 0;
+  padding-top: $spacing-20;
 
   &__texts {
     display: flex;
@@ -83,7 +84,8 @@ export default {
 
 @media (min-width: $tablet) {
   .title {
-    margin: calc($spacing-40 + $spacing-16) 0 calc($spacing-20 + $spacing-3) 0;
+    margin: calc($spacing-40 - $spacing-2) 0 calc($spacing-20 + $spacing-3) 0;
+    padding-top: $spacing-18;
   }
 }
 </style>
