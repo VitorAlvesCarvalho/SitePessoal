@@ -13,7 +13,7 @@
       <p class="introduction__description">
         Tenho experiências em empresas de seguimentos diversificados, atuando no
         desenvolvimento de novas funcionalidades e correções de bugs. Também
-        participo de tomadas de decisões técnicas e estrátegicas e no auxilio a
+        participo de tomadas de decisões técnicas e estratégicas e no auxílio a
         outros desenvolvedores da equipe.
       </p>
 

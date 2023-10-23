@@ -7,7 +7,7 @@ export default {
   name: "App",
 
   created() {
-    if (this.$route.path !== "/") {
+    if (this.$route.hash !== "") {
       this.$router.push({ name: "home" });
     }
   },

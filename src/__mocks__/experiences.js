@@ -28,15 +28,15 @@ export const experiences = [
     company: "Warren Brasil",
     role: "Desenvolvedor Front-end | Vue e mentor de jovens aprendizes",
     description:
-      "<ul> <li>Atuava no time portfolio experience, que é responsável pela experiência do usuário na criação de carteiras na plataforma de investimentos(maior e principal projeto da empresa).</li> <li>Manutenção e desenvolvimento de novas funcionalidades.</li> <li>Funcionalidades que participei ativamente do desenvolvimento: construtor de carteiras, editor de carteiras, assinatura de termos e riscos, tracking para mapear ações do usuário e depósito por múltiplos produtos.</li> <li>Também atuava como liderança técnica front end na tribo de aceleração, servindo de apoio para os jovens aprendizes, tirando dúvidas e avaliando o progresso de cada um.</li> </ul>",
-    time: "Jan de 2022 - Ago de 2022 · 8 meses",
+      "<ul> <li>Atuava no time portfolio experience, que é responsável pela experiência do usuário na criação de carteiras na plataforma de investimentos (maior e principal projeto da empresa).</li> <li>Manutenção e desenvolvimento de novas funcionalidades.</li> <li>Funcionalidades que participei ativamente do desenvolvimento: construtor de carteiras, editor de carteiras, assinatura de termos e riscos, tracking para mapear ações do usuário e depósito por múltiplos produtos.</li> <li>Também atuava como liderança técnica front end na tribo de aceleração, servindo de apoio para os jovens aprendizes, tirando dúvidas e avaliando o progresso de cada um.</li> </ul>",
+    time: "Mar de 2021 - Ago de 2022 · 1 ano e 6 meses",
   },
   {
     id: "5",
     company: "Abler",
     role: "Desenvolvedor Front-end | Vue",
     description:
-      "<ul> <li>Atuo no time de produto, que é responsável pelo desenvolvimento e manutenção do ATS(principal produto da empresa)</li> <li>Manutenção e desenvolvimento de novas funcionalidades.</li> <li>Funcionalidades que participei ativamente do desenvolvimento: migração de toda a plataforma para um novo design, criação de vagas, requisição de processos, currículo de candidatos, configuração da empresa.</li> </ul>",
+      "<ul> <li>Atuo no time de produto, que é responsável pelo desenvolvimento e manutenção do ATS (principal produto da empresa)</li> <li>Manutenção e desenvolvimento de novas funcionalidades.</li> <li>Funcionalidades que participei ativamente do desenvolvimento: migração de toda a plataforma para um novo design, criação de vagas, requisição de processos, currículo de candidatos, configuração da empresa.</li> </ul>",
     time: "Out de 2022 - Até o momento",
   },
 ];

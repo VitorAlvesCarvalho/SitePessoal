@@ -49,7 +49,7 @@ export default {
   z-index: 1;
   width: 100%;
   background: $background-app-bar;
-  box-shadow: 0 4px 4px 0px rgba(0, 0, 0, 0.5);
+  box-shadow: 0 2px 2px 0px rgba(0, 0, 0, 0.5);
 
   &__container {
     padding: $spacing-3 $spacing-4;
